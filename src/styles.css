@@ -1,0 +1,192 @@
+body {
+    background-color: black;
+    background-image: url('../public/e48eb2633fe25ecddb6bba5e62d8f763b35d7ef5b60853cdc266c0a4d8f1bd87.gif');
+    background-size: 45%; /* или background-size: cover; */
+    background-position: center;
+    animation: animateBackground 20s linear infinite;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #ff0000;
+}
+
+
+@keyframes animateBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+.navbar {
+    background-color: #ff0000;
+}
+.animated-text {
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    color: transparent;
+    background: linear-gradient(90deg, red, white);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+
+
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fa0000;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff0000;
+}
+
+.jumbotron {
+    background-color:#ff000000;
+    color: #ff0000;
+    padding: 3rem;
+    
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+}
+
+.jumbotron p {
+    font-size: 1.25rem;
+}
+    
+.btn-primary {
+    background-image: linear-gradient(to right, #ff0000, #000000);
+    border-color: transparent;
+    color: white;
+    background-size: 200% auto;
+    transition: background-position 0.5s;
+    animation: gradientAnimation 3s ease infinite;
+    outline: none;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: none !important;
+}
+
+.btn-primary:hover {
+    background-position: right center;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: left center;
+    }
+    50% {
+        background-position: right center;
+    }
+    100% {
+        background-position: left center;
+    }
+}
+
+
+section {
+    padding: 4rem 0;
+}
+
+footer {
+    background-color: #000000;
+    padding: 2rem 0;
+    text-align: center;
+
+    border-top: 1px solid #ff0000;
+}
+.anime-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.anime-images img {
+    width: 30%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.anime-images img:hover {
+    transform: scale(0.9);
+}.header-container {
+    background-color: #ff0000;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ff000017;
+    
+}
+
+.header-title {
+    margin: 0;
+    font-size: 24px;
+    background-image: linear-gradient(to right, #ff0000, #ffffff);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: textGradientAnimation 3s ease infinite;
+}
+
+@keyframes textGradientAnimation {
+    0% {
+        background-position: right;
+    }
+    50% {
+        background-position:top;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: #f74f4f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #a00000;
+}
